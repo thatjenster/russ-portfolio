@@ -1,0 +1,22 @@
+@import './sass/setup';
+@import './sass/variables';
+@import './sass/header';
+@import './sass/footer';
+
+body, html {
+    margin: 0;
+    height: 100%;
+}
+
+header {
+    background-image: url(./../assets/music-production-equipment-SNJ67HQ.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
