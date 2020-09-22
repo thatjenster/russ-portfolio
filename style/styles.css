@@ -287,6 +287,26 @@ header p {
   font-size: 1.7rem;
 }
 
+.showcase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.showcase .project-image {
+  width: 400px;
+  height: 250px;
+  margin: 20px 40px;
+}
+
 footer {
   background-color: #333;
 }

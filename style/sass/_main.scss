@@ -1,0 +1,11 @@
+.showcase {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .project-image {
+        width: 400px;
+        height: 250px;
+        margin: 20px 40px;
+    }
+}
