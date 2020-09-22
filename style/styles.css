@@ -278,6 +278,15 @@ header p {
   padding-top: 100px;
 }
 
+#scroll {
+  text-align: center;
+  display: block;
+}
+
+#scroll i {
+  font-size: 1.7rem;
+}
+
 footer {
   background-color: #333;
 }
