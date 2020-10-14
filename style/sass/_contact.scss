@@ -1,4 +1,7 @@
-.wrap-contact100 {
+label {
+    display: block;
+}
+.wrap-contact {
     width: 800px;
     background: #fff;
     border-radius: 10px;
@@ -8,11 +11,11 @@
     margin: 25px auto;
 }
 
-.contact100-form {
+.contact-form {
     width: 100%;
 }
 
-.contact100-form-title {
+.contact-title {
     display: block;
     font-family: SourceSansPro-Bold;
     font-size: 30px;
@@ -25,10 +28,23 @@
 .validate-input {
     position: relative;
 }
-.wrap-input100 {
+.wrap-input {
     width: 100%;
     position: relative;
     background-color: #fff;
     border-radius: 20px;
     margin-bottom: 30px;
+    .input {
+        width: 100%;
+        padding: 18px 15px;
+        border: 1px solid black;
+    }
+}
+
+.contact-btn {
+    background-color: rgba(0, 0, 0, 1);
+    border: solid rgba(96, 94, 94, 1) 0px;
+    cursor: pointer !important;
+    color: #fff;
+    padding: 13px 18px;
 }

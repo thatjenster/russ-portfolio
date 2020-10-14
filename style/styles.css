@@ -314,7 +314,11 @@ header p {
   margin: 0 auto;
 }
 
-.wrap-contact100 {
+label {
+  display: block;
+}
+
+.wrap-contact {
   width: 800px;
   background: #fff;
   border-radius: 10px;
@@ -325,11 +329,11 @@ header p {
   margin: 25px auto;
 }
 
-.contact100-form {
+.contact-form {
   width: 100%;
 }
 
-.contact100-form-title {
+.contact-title {
   display: block;
   font-family: SourceSansPro-Bold;
   font-size: 30px;
@@ -343,7 +347,7 @@ header p {
   position: relative;
 }
 
-.wrap-input100 {
+.wrap-input {
   width: 100%;
   position: relative;
   background-color: #fff;
@@ -351,8 +355,22 @@ header p {
   margin-bottom: 30px;
 }
 
+.wrap-input .input {
+  width: 100%;
+  padding: 18px 15px;
+  border: 1px solid black;
+}
+
+.contact-btn {
+  background-color: black;
+  border: solid #605e5e 0px;
+  cursor: pointer !important;
+  color: #fff;
+  padding: 13px 18px;
+}
+
 footer {
-  background-color: #333;
+  background-color: #c74012;
 }
 
 footer p {
