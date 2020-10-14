@@ -6,8 +6,10 @@
     height: 100px;
     width: 100px;
     margin: 0 auto;
-    font-size: 2.8rem;
-    padding: 30px 10px;
+    span {
+        font-size: 2.8rem;
+        padding: 0 10px;
+    }
 }
 
 .links {
