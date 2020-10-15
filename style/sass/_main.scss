@@ -9,7 +9,22 @@
         margin: 20px 40px;
     }
 }
+// about section 
+.about-section {
+    text-align: center;
+    padding: 100px;
+}
 
+// parallax wave image scroll 
+
+.parallax-wave {
+    background-image: url(./../assets/waveform-M7KN2TV.jpg);
+    min-height: 70vh; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 //parallax image scroll
 .parallax {

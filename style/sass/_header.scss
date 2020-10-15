@@ -1,3 +1,26 @@
+header {
+    background-image: url(./../assets/music-production-equipment-SNJ67HQ.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+header p {
+    text-align: center;
+    color: #fff;
+    font-size: 2.3rem;
+    padding-top: 100px;
+}
+
+#scroll {
+    text-align: center;
+    display: block;
+    i {
+        font-size: 1.7rem;
+    }
+}
+
 .logo {
     background-color: black;
     color: #fff;
@@ -26,20 +49,5 @@
         &:focus {
             color: $firstColor;
         }
-    }
-}
-
-header p {
-    text-align: center;
-    color: #fff;
-    font-size: 2.3rem;
-    padding-top: 100px;
-}
-
-#scroll {
-    text-align: center;
-    display: block;
-    i {
-        font-size: 1.7rem;
     }
 }

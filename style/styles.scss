@@ -10,15 +10,15 @@ body, html {
     height: 100%;
 }
 
-header {
-    background-image: url(./../assets/music-production-equipment-SNJ67HQ.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-}
-
 img {
     display: block;
     width: 100%;
+}
+
+h1{
+    font: normal 85px georgia,palatino,'book antiqua','palatino linotype',serif;
+}
+p {
+    font: lighter 18px futura-lt-w01-light,sans-serif;
+    letter-spacing: 1.2px;
 }

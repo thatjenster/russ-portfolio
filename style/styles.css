@@ -235,6 +235,30 @@ html {
   overflow: hidden;
 }
 
+header {
+  background-image: url(./../assets/music-production-equipment-SNJ67HQ.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+header p {
+  text-align: center;
+  color: #fff;
+  font-size: 2.3rem;
+  padding-top: 100px;
+}
+
+#scroll {
+  text-align: center;
+  display: block;
+}
+
+#scroll i {
+  font-size: 1.7rem;
+}
+
 .logo {
   background-color: black;
   color: #fff;
@@ -274,22 +298,6 @@ html {
   color: #0C63E7;
 }
 
-header p {
-  text-align: center;
-  color: #fff;
-  font-size: 2.3rem;
-  padding-top: 100px;
-}
-
-#scroll {
-  text-align: center;
-  display: block;
-}
-
-#scroll i {
-  font-size: 1.7rem;
-}
-
 .showcase {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -308,6 +316,20 @@ header p {
   width: 400px;
   height: 250px;
   margin: 20px 40px;
+}
+
+.about-section {
+  text-align: center;
+  padding: 100px;
+}
+
+.parallax-wave {
+  background-image: url(./../assets/waveform-M7KN2TV.jpg);
+  min-height: 70vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .parallax {
@@ -397,16 +419,17 @@ body, html {
   height: 100%;
 }
 
-header {
-  background-image: url(./../assets/music-production-equipment-SNJ67HQ.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-}
-
 img {
   display: block;
   width: 100%;
+}
+
+h1 {
+  font: normal 85px georgia,palatino,'book antiqua','palatino linotype',serif;
+}
+
+p {
+  font: lighter 18px futura-lt-w01-light,sans-serif;
+  letter-spacing: 1.2px;
 }
 /*# sourceMappingURL=styles.css.map */
