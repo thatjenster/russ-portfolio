@@ -310,8 +310,14 @@ header p {
   margin: 20px 40px;
 }
 
-.form-submit {
-  margin: 0 auto;
+.parallax {
+  background-image: url(./../assets/online-music-listening-PTSTYD2.jpg);
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
 }
 
 label {
@@ -363,10 +369,16 @@ label {
 
 .contact-btn {
   background-color: black;
-  border: solid #605e5e 0px;
   cursor: pointer !important;
   color: #fff;
-  padding: 13px 18px;
+  padding: 13px 22px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  border-radius: 5px;
+}
+
+.contact-btn:hover {
+  background-color: #c74012;
 }
 
 footer {

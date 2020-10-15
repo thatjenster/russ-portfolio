@@ -42,9 +42,12 @@ label {
 }
 
 .contact-btn {
-    background-color: rgba(0, 0, 0, 1);
-    border: solid rgba(96, 94, 94, 1) 0px;
-    cursor: pointer !important;
+    background-color: rgba(0, 0, 0, 1);    cursor: pointer !important;
     color: #fff;
-    padding: 13px 18px;
+    padding: 13px 22px;
+    transition: 0.2s ease-in-out;
+    border-radius: 5px;
+    &:hover {
+        background-color: $footerColor;
+    }
 }
