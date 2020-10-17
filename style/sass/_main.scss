@@ -1,18 +1,19 @@
 .showcase {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    .project-image {
-        width: 400px;
-        height: 250px;
-        margin: 20px 40px;
-    }
+    flex-wrap: wrap;
+}
+
+.project-image {
+    width: 350px;
+    height: 240px;
+    padding: 20px;
+
 }
 // about section 
 .about-section {
     text-align: center;
-    padding: 100px;
 }
 
 // parallax wave image scroll 
