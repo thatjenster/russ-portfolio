@@ -16,7 +16,7 @@
     position: relative;
     width: 90%;
     max-width: 400px;
-    margin: auto;
+    margin: 0 8px;
     overflow: hidden;
     padding: 20px 0;
   }
@@ -35,7 +35,7 @@
   }
   
   .content:hover .content-overlay{
-    opacity: 1;
+    opacity: 10;
   }
   
   .content-image{
