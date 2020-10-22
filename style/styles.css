@@ -421,8 +421,6 @@ label {
   border-radius: 10px;
   overflow: hidden;
   padding: 72px 150px 25px 150px;
-  -webkit-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
   margin: 25px auto;
 }
 
