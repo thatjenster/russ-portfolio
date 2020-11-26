@@ -1,33 +1,4 @@
-#portfolio .portfolio-section .filter-control {
-    margin-bottom: 16px;
-    text-align: center;
-  }
-  
-  #portfolio .portfolio-section .filter-control>li {
-    border-bottom: 1px solid transparent;
-    color: #cecece;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: 400;
-    letter-spacing: 0.3px;
-    position: relative;
-    transition: all .10s ease-in-out;
-  }
-  
-  #portfolio .portfolio-section .filter-control>li:not(:last-child) {
-    margin-right: 16px;
-  }
-  
-  #portfolio .portfolio-section .filter-control>li:hover:before,
-  #portfolio .portfolio-section .filter-control>li.tab-active:before {
-    bottom: 0;
-    content: "";
-    height: 1px;
-    position: absolute;
-    width: 100%;
-  }
-  
-  #portfolio .portfolio-section .portfolio-grid .portfolio-wrapper {
+    #portfolio .portfolio-section .portfolio-grid .portfolio-wrapper {
     -ms-flex-align: center;
     align-items: center;
     display: -ms-flexbox;
@@ -74,11 +45,6 @@
     margin-bottom: 10px;
   }
   
-  #portfolio .portfolio-section .portfolio-grid .portfolio-wrapper .item-content .content-more {
-    display: inline-block;
-    font-weight: 600;
-  }
-  
   #portfolio .portfolio-section .portfolio-grid .portfolio-wrapper:hover:before {
     opacity: 1;
     visibility: visible;
@@ -87,12 +53,6 @@
   #portfolio .portfolio-section .portfolio-grid .portfolio-wrapper:hover .item-content {
     opacity: 1;
     visibility: visible;
-  }
-  
-  @media (max-width: 767.98px) {
-    #portfolio .portfolio-section .filter-control>li {
-      font-size: 14px;
-    }
   }
   
   @media (max-width: 575.98px) {
