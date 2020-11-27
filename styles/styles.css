@@ -870,7 +870,7 @@ hr {
 }
 
 .navbar {
-  background-color: #0b0b0b;
+  background-color: rgba(2, 2, 2, 0.7);
   padding: 23px 50px;
 }
 
