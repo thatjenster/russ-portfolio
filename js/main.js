@@ -1,25 +1,3 @@
-/*!
- * Item: Kitzu
- * Description: Personal Portfolio Template
- * Author/Developer: Exill
- * Author/Developer URL: https://themeforest.net/user/exill
- * Version: v1.1.0
- * License: Themeforest Standard Licenses: https://themeforest.net/licenses
- */
-
-/*----------- Table of Contents -----------*/
-
-/**
- * Globals
- * Navbar
- * Home
- * Services
- * Testimonials
- * Contact
- * Preloader
- * Portfolio
- */
-
 (function($) {
   'use strict';
   $(function() {
@@ -31,7 +9,7 @@
     /* Custom function to remove margin bottom from items in the last row depending on the screen size / how many columns the grid has */
     function responsiveColumns(elements, options, styleClasses) {
       function sliceElements(elements, value) {
-        var slicedElements = $(elements[0]).slice(-value);
+        let slicedElements = $(elements[0]).slice(-value);
         if (elements[1] === null) {
           slicedElements.addClass(styleClasses);
         } else {
@@ -39,9 +17,9 @@
         }
       }
       $.each(options, function(index, value) {
-        var columns = value.columns;
+        let columns = value.columns;
         if (window.matchMedia(value.matchMedia).matches) {
-          var remainder = $(elements[0]).length % columns;
+          let remainder = $(elements[0]).length % columns;
           if (remainder === 0) {
             sliceElements(elements, columns);
           } else {
@@ -52,9 +30,6 @@
       });
     }
 
-    /*----------- Navbar -----------*/
-
-    /* Lightboxes setup */
     $('.navbar .navbar-nav .nav-link[href^="#"]').each(function() {
       $(this).animatedModal({
         animatedIn: 'fadeIn',
@@ -97,19 +72,16 @@
     $(document).on('mouseup', function(event) {
       if ($('.navbar #navbarSupportedContent').hasClass('show')) {
         // The mobile Bootstrap navbar dropdown
-        var navbarToggler = $('.navbar .navbar-menu');
+        let navbarToggler = $('.navbar .navbar-menu');
         if (!navbarToggler.is(event.target) && navbarToggler.has(event.target).length === 0) {
           navbarToggler.trigger('click');
         }
       }
     });
 
-    /*----------- Home -----------*/
-
-    /* Animated heading text */
     (function() {
       // Set animation timing
-      var animationDelay = 2500,
+      let animationDelay = 2500,
         // Clip effect
         revealDuration = 660,
         revealAnimationDelay = 1500;
@@ -122,11 +94,11 @@
       }
 
       function animateHeadline($headlines) {
-        var duration = animationDelay;
+        let duration = animationDelay;
         $headlines.each(function() {
           var headline = $(this);
           if (headline.hasClass('clip')) {
-            var spanWrapper = headline.find('.cd-words-wrapper'),
+            let spanWrapper = headline.find('.cd-words-wrapper'),
               newWidth = spanWrapper.width() + 10;
             spanWrapper.css('width', newWidth);
           }
@@ -139,7 +111,7 @@
       }
 
       function hideWord($word) {
-        var nextWord = takeNext($word);
+        let nextWord = takeNext($word);
 
         if ($word.parents('.cd-headline').hasClass('clip')) {
           $word.parents('.cd-words-wrapper').animate({
@@ -148,7 +120,6 @@
             switchWord($word, nextWord);
             showWord(nextWord);
           });
-
         }
       }
 
@@ -179,98 +150,10 @@
       }
     }())
 
-    /* Home variants manager */
-
-    // If Video variant
-    if ($('.home-area').hasClass('video-variant')) {
-      $('#homeVideo').YTPlayer();
-    }
-
-    /*----------  About: Services  ----------*/
-
-    /* Removes margin bottom from items in the last row depending on the screen size / how many columns the grid has */
-    responsiveColumns(
-      ['#about .services-section .single-service', null],
-      [{
-          matchMedia: '(max-width: 767.98px)',
-          columns: 1,
-        },
-        {
-          matchMedia: '(max-width: 991.98px)',
-          columns: 2,
-        }, {
-          matchMedia: '(min-width: 991.98px)',
-          columns: 3,
-        }
-      ],
-      'rc-mb-0'
-    );
-
-    /*----------  About: Testimonials  ----------*/
-
-    var testimonials = tns({
-      container: '#about .testimonials-section .my-slider',
-      items: 2,
-      gutter: 30,
-      "responsive": {
-        "0": {
-          "items": 1,
-          "gutter": 0
-        },
-        "768": {
-          "items": 2,
-          "gutter": 30
-        }
-      },
-      preventScrollOnTouch: 'auto',
-      slideBy: "page",
-      mouseDrag: true,
-      swipeAngle: false,
-      speed: 400,
-      controls: false,
-      autoHeight: true,
-      navPosition: 'bottom'
-    });
-
-    /*----------  About: Pricing  ----------*/
-
-    /* Removes margin bottom from items in the last row depending on the screen size / how many columns the grid has */
-    responsiveColumns(
-      ['#about .pricing-section .single-plan', null],
-      [{
-        matchMedia: '(max-width: 991.98px)',
-        columns: 1,
-      }, {
-        matchMedia: '(min-width: 991.98px)',
-        columns: 3,
-      }],
-      'rc-mb-0'
-    );
-
-    /*----------  Resume: Skills  ----------*/
-
-    (function() {
-      var initPercentageElement = function() {
-        $('#resume .skills-section .single-skill').each(function() {
-          var percentage = Math.min(100, Math.max(0, $(this).data('percentage')));
-          var barWidth = $(this).find('.skill-progress').outerWidth(true);
-          var percentageElementOffset = barWidth - (barWidth * (percentage / 100));
-          $(this).find('.skill-percentage').text(percentage + '%').css('margin-right', percentageElementOffset);
-          $(this).find('.progress-bar').attr('aria-valuenow', percentage).css('width', percentage + '%');
-        });
-      }
-      initPercentageElement();
-      $(window).on('resize', function() {
-        initPercentageElement();
-      });
-    }());
-
-    /*----------  Portfolio: Portfolio  ----------*/
-
     (function() {
       /* Setup Isotope */
-      var grid = $('#portfolio .portfolio-section .portfolio-grid');
-      var filters = $('#portfolio .portfolio-section .filter-control li');
+      let grid = $('#portfolio .portfolio-section .portfolio-grid');
+      let filters = $('#portfolio .portfolio-section .filter-control li');
       grid.imagesLoaded(function() {
         grid.isotope({
           itemSelector: '#portfolio .portfolio-section .single-item',
@@ -281,7 +164,7 @@
         filters.on('click', function() {
           filters.removeClass('tab-active');
           $(this).addClass('tab-active');
-          var selector = $(this).data('filter');
+          let selector = $(this).data('filter');
           grid.isotope({
             filter: selector,
             transitionDuration: '.25s'
@@ -302,29 +185,11 @@
       }],
       'rc-mb-0'
     );
-
-    /*----------  Blog: Blog  ----------*/
-
-    /* Removes margin bottom from items in the last row depending on the screen size / how many columns the grid has */
-    responsiveColumns(
-      ['#blog .blog-section .single-post', null],
-      [{
-        matchMedia: '(max-width: 991.98px)',
-        columns: 1,
-      }, {
-        matchMedia: '(min-width: 991.98px)',
-        columns: 3,
-      }],
-      'rc-mb-0'
-    );
-
-    /*----------- Contact: Contact -----------*/
-
     $('#contact .contact-section .contact-form').on('submit', function(event) {
-      var form = $(this);
-      var submitBtn = form.find('#contact-submit');
-      var submitBtnText = submitBtn.text();
-      var feedbackEl = form.find('.contact-feedback');
+      let form = $(this);
+      let submitBtn = form.find('#contact-submit');
+      let submitBtnText = submitBtn.text();
+      let feedbackEl = form.find('.contact-feedback');
       event.preventDefault();
       // Waiting for the response from the server
       submitBtn.html('Wait...').addClass('wait').prop('disabled', true);
@@ -362,13 +227,6 @@
           });
       }, 1000);
     });
-
-  });
-  $(window).on('load', function() {
-    /*----------- Preloader -----------*/
-
-    $('.preloader-icon').fadeOut(400);
-    $('.preloader').delay(500).fadeOut('slow');
 
   });
 }(jQuery));

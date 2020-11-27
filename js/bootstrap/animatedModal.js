@@ -1,11 +1,3 @@
-/*=========================================
- * animatedModal.js
- * author: João Pereira
- * website: https://joaopereira.pt
- * email: joaopereirawd@gmail.com
- * Licensed MIT
-=========================================*/
-
 (function($) {
 
   $.fn.animatedModal = function(options) {
