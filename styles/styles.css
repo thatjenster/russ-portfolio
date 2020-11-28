@@ -1057,11 +1057,6 @@ hr {
   white-space: nowrap;
 }
 
-.home-area .home-headline .single-headline b.is-visible {
-  opacity: 1;
-  position: relative;
-}
-
 .home-area.video-variant #wrapper_homeVideo:before {
   background-color: rgba(0, 0, 0, 0.7);
   content: '';
