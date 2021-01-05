@@ -1,4 +1,5 @@
 .home-area {
+    background-image: url(./../../img/RDProductions.jpg);
     background-position: center center;
     height: 100vh;
     overflow: hidden;
@@ -41,59 +42,9 @@
     margin-bottom: 34px;
   }
   
-  .home-area .home-headline {
-    color: #fff;
-    font-size: 32px;
-    font-weight: 400;
-    letter-spacing: 0.3px;
-    margin-bottom: 0;
-  }
-  
-  .home-area .home-headline .single-headline {
-    display: inline-block;
-    position: relative;
-    text-align: left;
-    vertical-align: top;
-  }
-  
-  .home-area .home-headline .single-headline::after {
-    background-color: #b9b9b9;
-    content: '';
-    height: 100%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 2px;
-  }
-  
-  .home-area .home-headline .single-headline b {
-    display: inline-block;
-    font-weight: 400;
-    left: 0;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    white-space: nowrap;
-  }
-  
-  .home-area.video-variant #wrapper_homeVideo:before {
-    background-color: rgba(0, 0, 0, 0.7);
-    content: '';
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-  }
-  
   @media (max-width: 991.98px) {
     .home-area .home-name {
       font-size: 62px;
-    }
-  
-    .home-area .home-headline {
-      font-size: 30px;
     }
   }
   
@@ -110,9 +61,5 @@
   
     .home-area .home-name {
       font-size: 48px;
-    }
-  
-    .home-area .home-headline {
-      font-size: 26px;
     }
   }

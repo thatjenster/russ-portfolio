@@ -93,11 +93,12 @@
   
   /* Overlay background */
   .element-cover-bg {
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: white;
     background-position: 50% 0;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    margin: 0 auto;
   }
   
   .element-cover-bg:before {
