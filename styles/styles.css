@@ -247,12 +247,11 @@ html {
 body {
   background-image: url("./../img/RDProductions.jpg");
   background-position: center center;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
   height: 100vh;
   color: #9f9f9f;
   font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
   line-height: 1.95;
   overflow: hidden;
   position: relative;
@@ -854,23 +853,6 @@ hr {
   }
 }
 
-.navbar .navbar-brand span {
-  color: #f3f3f3;
-  text-transform: uppercase;
-}
-
-.navbar .navbar-brand img {
-  width: 110px;
-}
-
-.navbar .navbar-brand svg {
-  width: 110px;
-}
-
-.navbar .navbar-brand svg #logo-text {
-  fill: #e6e6e6;
-}
-
 .navbar .navbar-menu {
   display: none;
 }
@@ -883,7 +865,7 @@ hr {
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link:focus {
-  color: #fff;
+  color: #40916C;
 }
 
 .navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
@@ -966,16 +948,10 @@ hr {
 }
 
 .home-area .fixed-wrapper .fixed-block {
-  bottom: 34px;
-  position: absolute;
-}
-
-.home-area .fixed-wrapper .fixed-block.block-left {
-  left: 0;
-}
-
-.home-area .fixed-wrapper .fixed-block.block-right {
+  top: 400px;
+  bottom: 0;
   right: 0;
+  position: absolute;
 }
 
 .home-area .fixed-wrapper .social-icons {
@@ -988,18 +964,19 @@ hr {
   text-align: center;
 }
 
-.home-area .home-name {
-  color: #05668D;
-  font-size: 70px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  margin-bottom: 34px;
+.home-area .fixed-wrapper .social-icons > li a i {
+  color: black;
+  font-size: 20px;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
 }
 
-@media (max-width: 991.98px) {
-  .home-area .home-name {
-    font-size: 62px;
-  }
+.home-area .fixed-wrapper .social-icons > li a i:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  color: #05668D;
 }
 
 @media (max-width: 767.98px) {
@@ -1011,9 +988,6 @@ hr {
 @media (max-width: 575.98px) {
   .home-area {
     background-position: 62% center;
-  }
-  .home-area .home-name {
-    font-size: 48px;
   }
 }
 

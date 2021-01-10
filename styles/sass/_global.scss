@@ -10,12 +10,11 @@
   body {
     background-image: url("./../img/RDProductions.jpg");
     background-position: center center;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
     height: 100vh;
     color: #9f9f9f;
     font-family: "Poppins", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
     line-height: 1.95;
     overflow: hidden;
     position: relative;
