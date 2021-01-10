@@ -39,7 +39,7 @@
   .navbar .navbar-menu:after {
     -ms-flex-item-align: end;
     align-self: flex-end;
-    background-color: gray;
+    background-color: $grey;
     height: 3px;
     width: 100%;
   }
@@ -64,7 +64,7 @@
   }
 
   .navbar .navbar-collapse .navbar-nav {
-    background-color: #191919;
+    background-color: $mainBlack;
     padding: 8px 20px;
     position: relative;
     top: 8px;

@@ -9,51 +9,25 @@
 
 #contact .contact-section .contact-form .form-group {
   margin-bottom: 25px;
-}
-
-#contact .contact-section .contact-form .form-group .form-control {
-  background-color: #161616;
-  border: none;
-  border-bottom: 1px solid #1d1d1d;
-  border-radius: 0;
-  font-size: 15px;
-  height: 44px;
-  padding: 9px 14px;
+  .form-control {
+    background-color: $mainBlack;
+    border: none;
+    border-bottom: 1px solid $borderBottom;
+    border-radius: 0;
+    font-size: 15px;
+    height: 44px;
+    padding: 9px 14px;
+  }
 }
 
 #contact .contact-section .contact-form .form-group .form-control:-webkit-autofill,
 #contact .contact-section .contact-form .form-group .form-control:-webkit-autofill:hover,
 #contact .contact-section .contact-form .form-group .form-control:-webkit-autofill:focus,
 #contact .contact-section .contact-form .form-group .form-control:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0px 1000px #0b0b0b inset;
+  -webkit-box-shadow: 0 0 0px 1000px $mainBlack inset;
   -webkit-text-fill-color: #777 !important;
   -webkit-transition: background-color 5000s ease-in-out 0s;
   transition: background-color 5000s ease-in-out 0s;
-}
-
-#contact .contact-section .contact-form .form-group .form-control::-webkit-input-placeholder {
-  color: #777;
-}
-
-#contact .contact-section .contact-form .form-group .form-control::-moz-placeholder {
-  color: #777;
-}
-
-#contact .contact-section .contact-form .form-group .form-control:-ms-input-placeholder {
-  color: #777;
-}
-
-#contact .contact-section .contact-form .form-group .form-control::-ms-input-placeholder {
-  color: #777;
-}
-
-#contact .contact-section .contact-form .form-group .form-control,
-#contact .contact-section .contact-form .form-group .form-control::placeholder {
-  color: #777;
-}
-
-#contact .contact-section .contact-form .form-group .form-control:focus {
-  box-shadow: none;
 }
 
 #contact .contact-section .contact-form .form-group.form-message #contact-message {
@@ -65,18 +39,18 @@
 }
 
 #contact .contact-section .contact-form .form-submit #contact-submit.wait {
-  background-color: #777 !important;
-  border-color: #777 !important;
+  background-color: $grey !important;
+  border-color:$grey !important;
 }
 
 #contact .contact-section .contact-form .form-submit #contact-submit.success {
-  background-color: #28a745 !important;
-  border-color: #28a745 !important;
+  background-color: $sucessColor !important;
+  border-color: $sucessColor !important;
 }
 
 #contact .contact-section .contact-form .form-submit #contact-submit.error {
-  background-color: #dc3545 !important;
-  border-color: #dc3545 !important;
+  background-color: $errorColor !important;
+  border-color:$errorColor !important;
 }
 
 #contact .contact-section .contact-form .form-submit .contact-feedback {
@@ -86,11 +60,11 @@
 }
 
 #contact .contact-section .contact-form .form-submit .contact-feedback.success {
-  color: #28a745;
+  color: $sucessColor;
 }
 
 #contact .contact-section .contact-form .form-submit .contact-feedback.error {
-  color: #dc3545;
+  color: $errorColor;
 }
 
 #contact .contact-section .contact-info {
@@ -122,15 +96,15 @@
   font-size: 36px;
   margin-right: 50px;
   position: relative;
-}
-
-#contact .contact-section .contact-info .list-info .info-icon i {
-  -webkit-transform: translate(0, -50%);
-  left: 0;
-  line-height: 100%;
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
+  i {
+    color: $mainColor;
+    -webkit-transform: translate(0, -50%);
+    left: 0;
+    line-height: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
 }
 
 #contact .contact-section .contact-info .list-info .info-details {
@@ -145,12 +119,12 @@
 }
 
 #contact .contact-section .contact-info .list-info .info-details .info-value a {
-  color: #9f9f9f !important;
+  color: $grey !important;
 }
 
 #contact .contact-section .contact-info .list-info .info-details .info-value a:hover,
 #contact .contact-section .contact-info .list-info .info-details .info-value a:focus {
-  color: #797979 !important;
+  color: $grey !important;
 }
 
 @media (max-width: 1199.98px) {

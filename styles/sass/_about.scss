@@ -1,6 +1,6 @@
 #about .info-section .info-img img {
     background-color: transparent;
-    border-color: rgba(0, 0, 0, 0.18);
+    border-color: $borderColor;
     width: 430px;
   }
   
@@ -14,7 +14,7 @@
   }
   
   #about .info-section .info-content .content-description p:last-child {
-    border-bottom: 2px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 2px solid $borderBottom;
     margin-bottom: 0;
     padding-bottom: 29px;
   }

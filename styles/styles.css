@@ -897,7 +897,7 @@ hr {
   .navbar .navbar-menu:after {
     -ms-flex-item-align: end;
     align-self: flex-end;
-    background-color: gray;
+    background-color: #777;
     height: 3px;
     width: 100%;
   }
@@ -917,7 +917,7 @@ hr {
     background-color: #f3f3f3;
   }
   .navbar .navbar-collapse .navbar-nav {
-    background-color: #191919;
+    background-color: #161616;
     padding: 8px 20px;
     position: relative;
     top: 8px;
@@ -1219,7 +1219,7 @@ hr {
 #contact .contact-section .contact-form .form-group .form-control {
   background-color: #161616;
   border: none;
-  border-bottom: 1px solid #1d1d1d;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 0;
   font-size: 15px;
   height: 44px;
@@ -1230,47 +1230,10 @@ hr {
 #contact .contact-section .contact-form .form-group .form-control:-webkit-autofill:hover,
 #contact .contact-section .contact-form .form-group .form-control:-webkit-autofill:focus,
 #contact .contact-section .contact-form .form-group .form-control:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0px 1000px #0b0b0b inset;
+  -webkit-box-shadow: 0 0 0px 1000px #161616 inset;
   -webkit-text-fill-color: #777 !important;
   -webkit-transition: background-color 5000s ease-in-out 0s;
   transition: background-color 5000s ease-in-out 0s;
-}
-
-#contact .contact-section .contact-form .form-group .form-control::-webkit-input-placeholder {
-  color: #777;
-}
-
-#contact .contact-section .contact-form .form-group .form-control:-ms-input-placeholder {
-  color: #777;
-}
-
-#contact .contact-section .contact-form .form-group .form-control::-ms-input-placeholder {
-  color: #777;
-}
-
-#contact .contact-section .contact-form .form-group .form-control,
-#contact .contact-section .contact-form .form-group .form-control::-webkit-input-placeholder {
-  color: #777;
-}
-
-#contact .contact-section .contact-form .form-group .form-control,
-#contact .contact-section .contact-form .form-group .form-control:-ms-input-placeholder {
-  color: #777;
-}
-
-#contact .contact-section .contact-form .form-group .form-control,
-#contact .contact-section .contact-form .form-group .form-control::-ms-input-placeholder {
-  color: #777;
-}
-
-#contact .contact-section .contact-form .form-group .form-control,
-#contact .contact-section .contact-form .form-group .form-control::placeholder {
-  color: #777;
-}
-
-#contact .contact-section .contact-form .form-group .form-control:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 #contact .contact-section .contact-form .form-group.form-message #contact-message {
@@ -1342,6 +1305,7 @@ hr {
 }
 
 #contact .contact-section .contact-info .list-info .info-icon i {
+  color: #05668D;
   -webkit-transform: translate(0, -50%);
   left: 0;
   line-height: 100%;
@@ -1362,12 +1326,12 @@ hr {
 }
 
 #contact .contact-section .contact-info .list-info .info-details .info-value a {
-  color: #9f9f9f !important;
+  color: #777 !important;
 }
 
 #contact .contact-section .contact-info .list-info .info-details .info-value a:hover,
 #contact .contact-section .contact-info .list-info .info-details .info-value a:focus {
-  color: #797979 !important;
+  color: #777 !important;
 }
 
 @media (max-width: 1199.98px) {
