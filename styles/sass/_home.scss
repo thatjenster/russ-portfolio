@@ -1,0 +1,65 @@
+.home-area {
+    background-image: url(./../../img/RDProductions.jpg);
+    background-position: center center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .home-area .fixed-wrapper {
+    margin: 0 50px;
+    position: relative;
+  }
+  
+  .home-area .fixed-wrapper .fixed-block {
+    bottom: 34px;
+    position: absolute;
+  }
+  
+  .home-area .fixed-wrapper .fixed-block.block-left {
+    left: 0;
+  }
+  
+  .home-area .fixed-wrapper .fixed-block.block-right {
+    right: 0;
+  }
+  
+  
+  .home-area .fixed-wrapper .social-icons {
+    margin-bottom: 0;
+  }
+  
+  .home-area .fixed-wrapper .social-icons>li {
+    line-height: 100%;
+    margin-top: 14px;
+    text-align: center;
+  }
+  
+  .home-area .home-name {
+    color: #05668D;
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 34px;
+  }
+  
+  @media (max-width: 991.98px) {
+    .home-area .home-name {
+      font-size: 62px;
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+    .home-area .fixed-wrapper {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 575.98px) {
+    .home-area {
+      background-position: 62% center;
+    }
+  
+    .home-area .home-name {
+      font-size: 48px;
+    }
+  }
