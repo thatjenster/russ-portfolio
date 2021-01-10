@@ -8,7 +8,10 @@
   
   /* Body */
   body {
-    background-color: #111;
+    background-image: url("./../img/RDProductions.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
     color: #9f9f9f;
     font-family: "Poppins", sans-serif;
     font-size: 14px;
@@ -89,25 +92,6 @@
   /* Helpers */
   .rc-mb-0 {
     margin-bottom: 0 !important;
-  }
-  
-  /* Overlay background */
-  .element-cover-bg {
-    background-color: white;
-    background-position: 50% 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    margin: 0 auto;
-  }
-  
-  .element-cover-bg:before {
-    content: '';
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
   }
   
   /* Animations */
