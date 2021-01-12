@@ -1,6 +1,7 @@
 #about .info-section .info-img img {
     background-color: transparent;
     border-color: $borderColor;
+    border-radius: 50%;
     width: 430px;
   }
   
@@ -27,41 +28,6 @@
   
   #about .info-section .info-content .content-download {
     margin-right: 23px;
-  }
-  
-  #about .info-section .info-content .content-follow {
-    -ms-flex-align: center;
-    align-items: center;
-    display: inline-block;
-    display: -ms-flexbox;
-    display: flex;
-    line-height: 100%;
-    margin-top: 20px;
-    margin-bottom: 0;
-  }
-  
-  #about .info-section .info-content .content-follow:before {
-    background-color: $mainGreen;
-    content: '';
-    height: 2px;
-    margin-right: 23px;
-    width: 60px;
-  }
-  
-  #about .info-section .info-content .content-follow li {
-    font-size: 28px;
-  }
-  
-  #about .info-section .info-content .content-follow li:not(last-child) {
-    margin-right: 14px;
-  }
-  
-  #about .info-section .info-content .content-follow li a {
-    color: #cecece;
-    &:hover,
-    &:focus {
-      color: $mainGreen;
-    }
   }
   
   @media (min-width: 992px) and (max-width: 1199.98px) {

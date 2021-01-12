@@ -870,8 +870,8 @@ hr {
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link:focus {
   color: #40916C;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
@@ -951,6 +951,7 @@ hr {
 #about .info-section .info-img img {
   background-color: transparent;
   border-color: rgba(0, 0, 0, 0.18);
+  border-radius: 50%;
   width: 430px;
 }
 
@@ -977,43 +978,6 @@ hr {
 
 #about .info-section .info-content .content-download {
   margin-right: 23px;
-}
-
-#about .info-section .info-content .content-follow {
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-          align-items: center;
-  display: inline-block;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  line-height: 100%;
-  margin-top: 20px;
-  margin-bottom: 0;
-}
-
-#about .info-section .info-content .content-follow:before {
-  background-color: #40916C;
-  content: '';
-  height: 2px;
-  margin-right: 23px;
-  width: 60px;
-}
-
-#about .info-section .info-content .content-follow li {
-  font-size: 28px;
-}
-
-#about .info-section .info-content .content-follow li:not(last-child) {
-  margin-right: 14px;
-}
-
-#about .info-section .info-content .content-follow li a {
-  color: #cecece;
-}
-
-#about .info-section .info-content .content-follow li a:hover, #about .info-section .info-content .content-follow li a:focus {
-  color: #40916C;
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
