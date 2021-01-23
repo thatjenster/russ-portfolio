@@ -245,10 +245,10 @@ html {
 
 /* Body */
 body {
-  background-image: url("./../img/RDProductions.jpg");
+  background-image: url("./../img/home.jpg");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   height: 100vh;
   color: #9f9f9f;
   font-family: "Poppins", sans-serif;
@@ -855,6 +855,11 @@ hr {
 
 .navbar .navbar-menu {
   display: none;
+}
+
+.navbar {
+  background-color: black;
+  padding: 16px 0;
 }
 
 .navbar .navbar-nav .nav-link {

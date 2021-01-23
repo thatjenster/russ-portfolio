@@ -2,6 +2,11 @@
   display: none;
 }
 
+.navbar {
+  background-color: black;
+  padding: 16px 0;
+}
+
 .navbar .navbar-nav .nav-link {
   color: $mainColor;
   font-size: 27px;
