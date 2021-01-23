@@ -859,7 +859,7 @@ hr {
 
 .navbar {
   background-color: black;
-  padding: 16px 0;
+  padding: 16px 20px;
 }
 
 .navbar .navbar-nav .nav-link {
