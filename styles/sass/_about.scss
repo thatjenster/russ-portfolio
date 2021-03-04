@@ -1,17 +1,5 @@
-#about .info-section .info-img img {
-    background-color: transparent;
-    border-color: $borderColor;
-    border-radius: 50%;
-    width: 430px;
-  }
-  
-  #about .info-section .info-content .content-subtitle {
-    font-size: 24px;
-    margin-bottom: 15px;
-  }
-  
   #about .info-section .info-content .content-description {
-    font-size: 15px;
+    font-size: 16px;
   }
   
   #about .info-section .info-content .content-description p:last-child {
@@ -31,15 +19,6 @@
   }
   
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    #about .info-section .info-img img {
-      -o-object-fit: cover;
-      height: 440px;
-      object-fit: cover;
-    }
-  
-    #about .info-section .info-content .content-subtitle {
-      display: none;
-    }
   
     #about .info-section .info-content .content-description {
       font-size: 14px;

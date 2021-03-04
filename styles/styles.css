@@ -858,8 +858,14 @@ hr {
 }
 
 .navbar {
-  background-color: black;
+  background-color: #d1caca;
   padding: 16px 20px;
+}
+
+.nav-logo {
+  width: 80px;
+  height: 60px;
+  margin: 0 auto;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -932,7 +938,7 @@ hr {
     padding: 8px 20px;
     position: relative;
     top: 8px;
-    width: 200px;
+    width: 300px;
     z-index: 2;
   }
   .navbar .navbar-collapse .navbar-nav .nav-link {
@@ -953,20 +959,8 @@ hr {
   }
 }
 
-#about .info-section .info-img img {
-  background-color: transparent;
-  border-color: rgba(0, 0, 0, 0.18);
-  border-radius: 50%;
-  width: 430px;
-}
-
-#about .info-section .info-content .content-subtitle {
-  font-size: 24px;
-  margin-bottom: 15px;
-}
-
 #about .info-section .info-content .content-description {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 #about .info-section .info-content .content-description p:last-child {
@@ -986,14 +980,6 @@ hr {
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  #about .info-section .info-img img {
-    -o-object-fit: cover;
-    height: 440px;
-    object-fit: cover;
-  }
-  #about .info-section .info-content .content-subtitle {
-    display: none;
-  }
   #about .info-section .info-content .content-description {
     font-size: 14px;
   }
@@ -1072,6 +1058,11 @@ hr {
   margin-bottom: 30px;
   overflow: hidden;
   position: relative;
+}
+
+.portfolio-wrapper img {
+  width: 625px;
+  height: 250px;
 }
 
 #portfolio .portfolio-section .portfolio-grid .portfolio-wrapper:before {
