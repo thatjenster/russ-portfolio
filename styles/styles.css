@@ -255,6 +255,7 @@ body {
   line-height: 1.95;
   overflow: hidden;
   position: relative;
+  padding-top: 90px;
 }
 
 /* Typography */
@@ -858,7 +859,7 @@ hr {
 }
 
 .navbar {
-  background-color: #d1caca;
+  background-color: #020202;
   padding: 16px 20px;
 }
 
