@@ -1,7 +1,7 @@
 <?php
 
 // Email recipient
-$EmailTo = "YOUR_EMAIL@EXAMPLE.COM";
+$EmailTo = "russdavidperna@gmail.com";
 
 $errors = "";
 
